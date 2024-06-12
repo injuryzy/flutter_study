@@ -1,5 +1,6 @@
 import 'package:client_app/pages/web_view_page.dart';
 import 'package:client_app/route/routes.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 
@@ -15,44 +16,51 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+          child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Container(
-              height: 150,
-              width: double.infinity,
-              child: Swiper(
-                  itemCount: 3,
-                  indicatorLayout: PageIndicatorLayout.NONE,
-                  autoplay: true,
-                  pagination: const SwiperPagination(),
-                  control: const SwiperControl(),
-                  itemBuilder: (context, index) {
-                    return Container(
-                      width: double.infinity,
-                      height: 150,
-                      color: Colors.blue,
-                      margin:
-                          EdgeInsets.symmetric(vertical: 0.0, horizontal: 0.0),
-                    );
-                  }),
-            ),
-            Expanded(
-                child: ListView.builder(
+            _banner(),
+            ListView.builder(
+                  shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return _listItemView();
               },
               itemCount: 100,
-            ))
+            )
           ],
         ),
-      ),
+      )),
+    );
+  }
+
+  Widget _banner() {
+    return SizedBox(
+      height: 150,
+      width: double.infinity,
+      child: Swiper(
+          itemCount: 3,
+          indicatorLayout: PageIndicatorLayout.NONE,
+          autoplay: true,
+          pagination: const SwiperPagination(),
+          control: const SwiperControl(),
+          itemBuilder: (context, index) {
+            return Container(
+              width: double.infinity,
+              height: 150,
+              color: Colors.blue,
+              margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 0.0),
+            );
+          }),
     );
   }
 
   Widget _listItemView() {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, RoutePath.webViewPage);
+        Navigator.pushNamed(context, RoutePath.webViewPage, arguments: {
+          "name": "使用路由传值",
+        });
         /* Navigator.push(
           context,
           MaterialPageRoute(builder: (context) {

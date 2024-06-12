@@ -6,9 +6,9 @@ class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case RoutePath.home:
-        return pageRoute(HomePage());
+        return pageRoute(HomePage(), settings: settings);
       case RoutePath.webViewPage:
-        return pageRoute(WebViewPage(title: "首页"));
+        return pageRoute(WebViewPage(title: "首页"), settings: settings);
     }
     return pageRoute(
       Scaffold(
