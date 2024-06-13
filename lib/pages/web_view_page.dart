@@ -15,14 +15,13 @@ class _WebViewPageState extends State<WebViewPage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp){
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       var map = ModalRoute.of(context)?.settings.arguments;
       if (map is Map) {
         name = map["name"];
         setState(() {});
       }
     });
-
   }
 
   @override
