@@ -1,8 +1,10 @@
+import 'package:client_app/http/dio_instance.dart';
 import 'package:client_app/pages/home/home_page.dart';
 import 'package:client_app/route/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  DioInstance.instance().initDio(baseUrl: "https://www.wanandroid.com");
   runApp(const MyApp());
 }
 

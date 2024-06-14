@@ -20,7 +20,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    viewModel.initDio();
     super.initState();
     viewModel.getBanner();
     viewModel.getHomeList();
