@@ -131,6 +131,19 @@ class HomeListData {
 /// userId : -1
 /// visible : 1
 /// zan : 0
+//  置顶数据
+class HomeTopListData {
+  List<HomeListItemData>? topList;
+
+  HomeTopListData.fromJson(dynamic json) {
+    if (json is List) {
+      topList = [];
+      for (var value in json) {
+        topList?.add(HomeListItemData.fromJson(value));
+      }
+    }
+  }
+}
 
 class HomeListItemData {
   HomeListItemData({

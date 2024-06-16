@@ -1,5 +1,5 @@
-import 'package:client_app/datas/home_list_data.dart';
 import 'package:client_app/pages/home/home_vm.dart';
+import 'package:client_app/repository/datas/home_list_data.dart';
 import 'package:client_app/route/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     viewModel.getBanner();
-    viewModel.getHomeList();
+    viewModel.initHomeList();
   }
 
   @override
@@ -135,11 +135,13 @@ class _HomePageState extends State<HomePage> {
                   style: TextStyle(color: Colors.black, fontSize: 11),
                 ),
                 SizedBox(width: 10),
-                Text(
-                  "置顶",
-                  style: TextStyle(
-                      color: Colors.blue, fontWeight: FontWeight.bold),
-                ),
+                (item?.type?.toInt() == 1)
+                    ? Text(
+                        "置顶",
+                        style: TextStyle(
+                            color: Colors.blue, fontWeight: FontWeight.bold),
+                      )
+                    : SizedBox(),
               ],
             ),
             Text(
