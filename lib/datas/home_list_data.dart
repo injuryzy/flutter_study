@@ -1,65 +1,21 @@
-/// data : {"curPage":1,"datas":[{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28535,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/Vp1EMRjFYWHMWaJzLNQTBQ","niceDate":"1天前","niceShareDate":"5小时前","origin":"","prefix":"","projectLink":"","publishTime":1718121600000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718241323000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"Gradle直接Run和使用命令行编译有什么区别?","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28529,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/xT2lqZD3Ni1_pHhPZc_6Nw","niceDate":"2天前","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1718035200000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154637000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"受欢迎的鸿蒙工具库（harmony-utils）","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28532,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/b4DJDvs2FRExvrmF2T0X4Q","niceDate":"2天前","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1718035200000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154682000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"Android FCM 推送详解，出海应用必备","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":643,"chapterName":"ArkTS 语言","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28525,"isAdminAdd":false,"link":"https://juejin.cn/post/7376113820233433127","niceDate":"2天前","niceShareDate":"2天前","origin":"","prefix":"","projectLink":"","publishTime":1718025485000,"realSuperChapterId":639,"selfVisible":0,"shareDate":1718025485000,"shareUser":"","superChapterId":640,"superChapterName":"鸿蒙App开发入门 - 学习路径","tags":[],"title":"【拥抱鸿蒙】HarmonyOS NEXT深入理解应用程序框架","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28494,"isAdminAdd":false,"link":"https://juejin.cn/post/7364740313284444186","niceDate":"2天前","niceShareDate":"2024-06-01 09:29","origin":"","prefix":"","projectLink":"","publishTime":1718025408000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717205394000,"shareUser":"goweii","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"RecyclerView还能这样滚动对齐?","type":0,"userId":20382,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28506,"isAdminAdd":false,"link":"https://juejin.cn/post/7375370443731288101","niceDate":"2天前","niceShareDate":"2024-06-03 08:16","origin":"","prefix":"","projectLink":"","publishTime":1718025396000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717373817000,"shareUser":"goweii","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"第三节：源码解析协程的取消和异常流程 + 图解","type":0,"userId":20382,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28509,"isAdminAdd":false,"link":"https://juejin.cn/post/7344571968174669876","niceDate":"2天前","niceShareDate":"2024-06-03 09:40","origin":"","prefix":"","projectLink":"","publishTime":1718025394000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717378816000,"shareUser":"趣阅编程","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"全局视角下的APP性能优化经验","type":0,"userId":13273,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28513,"isAdminAdd":false,"link":"https://juejin.cn/post/7302322661958942756","niceDate":"2天前","niceShareDate":"2024-06-05 08:17","origin":"","prefix":"","projectLink":"","publishTime":1718025384000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717546650000,"shareUser":"goweii","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android进阶宝典 -- 还在使用Gson吗？试下kotlin-serialization的强大功能","type":0,"userId":20382,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"张鸿洋","canEdit":false,"chapterId":543,"chapterName":"Android技术周报","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28523,"isAdminAdd":false,"link":"https://www.wanandroid.com/blog/show/3663","niceDate":"2024-06-10 00:00","niceShareDate":"2024-06-10 00:10","origin":"","prefix":"","projectLink":"","publishTime":1717948800000,"realSuperChapterId":542,"selfVisible":0,"shareDate":1717949400000,"shareUser":"","superChapterId":543,"superChapterName":"技术周报","tags":[],"title":"Android 技术周刊 （2024-06-03 ~ 2024-06-10）","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28521,"isAdminAdd":false,"link":"https://juejin.cn/post/7377220397403865142","niceDate":"2024-06-07 10:13","niceShareDate":"2024-06-07 10:13","origin":"","prefix":"","projectLink":"","publishTime":1717726439000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717726439000,"shareUser":"图你怀中安稳","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android 现代应用架构更佳实践","type":0,"userId":41223,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28520,"isAdminAdd":false,"link":"https://bwshen.blog.csdn.net/article/details/125582365","niceDate":"2024-06-07 09:27","niceShareDate":"2024-06-07 09:27","origin":"","prefix":"","projectLink":"","publishTime":1717723673000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717723673000,"shareUser":"残页","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android自定义权限CVE漏洞分析 (IEEE论文)","type":0,"userId":12467,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28528,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/AukFb7KvoBUeB-KQiOw-xQ","niceDate":"2024-06-07 00:00","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1717689600000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154617000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"NDK开发、Native Hook、Android性能优化必知：动态链接","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28531,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/hr4oWnn6BVpQb3jOXhMyfg","niceDate":"2024-06-07 00:00","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1717689600000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154669000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"两台Android 设备同一个局域网下如何自由通信？","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28519,"isAdminAdd":false,"link":"https://juejin.cn/post/7376894518329294883","niceDate":"2024-06-06 13:58","niceShareDate":"2024-06-06 13:49","origin":"","prefix":"","projectLink":"","publishTime":1717653511000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717652944000,"shareUser":"RedRackham","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"阿伟，这个点了怎么还在写玩安卓鸿蒙版","type":0,"userId":143498,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28530,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/vFFsnx9zQ_Yuifc64wvTQQ","niceDate":"2024-06-06 00:00","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1717603200000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154655000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"ViewModel为什么可以保存数据？","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28516,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/6mtFmO1NhGm3vbJ6K9Gjsg","niceDate":"2024-06-04 00:00","niceShareDate":"2024-06-05 09:21","origin":"","prefix":"","projectLink":"","publishTime":1717430400000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717550465000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"Android存储系统成长记，来认识我的团队成员","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"张鸿洋","canEdit":false,"chapterId":543,"chapterName":"Android技术周报","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28504,"isAdminAdd":false,"link":"https://www.wanandroid.com/blog/show/3661","niceDate":"2024-06-03 00:00","niceShareDate":"2024-06-03 00:10","origin":"","prefix":"","projectLink":"","publishTime":1717344000000,"realSuperChapterId":542,"selfVisible":0,"shareDate":1717344600000,"shareUser":"","superChapterId":543,"superChapterName":"技术周报","tags":[],"title":"Android 技术周刊 （2024-05-27 ~ 2024-06-03）","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28514,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/yD_-6oM52LhWfSiD91D4Nw","niceDate":"2024-06-03 00:00","niceShareDate":"2024-06-05 09:20","origin":"","prefix":"","projectLink":"","publishTime":1717344000000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717550440000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"Android视频开发入门: VideoView、MediaPlayer、 FFmpeg、exoplayer...","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28515,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/cMBc4rUdPpBcDs8mpVAPkQ","niceDate":"2024-06-03 00:00","niceShareDate":"2024-06-05 09:20","origin":"","prefix":"","projectLink":"","publishTime":1717344000000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717550452000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"在Android地图上实现一个雨雪特效吧","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28497,"isAdminAdd":false,"link":"https://juejin.cn/post/7375035008262815778","niceDate":"2024-06-02 22:29","niceShareDate":"2024-06-02 22:24","origin":"","prefix":"","projectLink":"","publishTime":1717338560000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717338291000,"shareUser":"鸿洋","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android定位需要引用的动态库","type":0,"userId":2,"visible":1,"zan":0}],"offset":0,"over":false,"pageCount":772,"size":20,"total":15439}
-/// errorCode : 0
-/// errorMsg : ""
-
-class HomeListData {
-  HomeListData({
-      HomeData? data,
-      num? errorCode,
-      String? errorMsg,}){
-    _data = data;
-    _errorCode = errorCode;
-    _errorMsg = errorMsg;
-}
-
-  HomeListData.fromJson(dynamic json) {
-    _data = json['data'] != null ? HomeData.fromJson(json['data']) : null;
-    _errorCode = json['errorCode'];
-    _errorMsg = json['errorMsg'];
-  }
-  HomeData? _data;
-  num? _errorCode;
-  String? _errorMsg;
-HomeListData copyWith({  HomeData? data,
-  num? errorCode,
-  String? errorMsg,
-}) => HomeListData(  data: data ?? _data,
-  errorCode: errorCode ?? _errorCode,
-  errorMsg: errorMsg ?? _errorMsg,
-);
-  HomeData? get data => _data;
-  num? get errorCode => _errorCode;
-  String? get errorMsg => _errorMsg;
-
-  Map<String, dynamic> toJson() {
-    final map = <String, dynamic>{};
-    if (_data != null) {
-      map['data'] = _data?.toJson();
-    }
-    map['errorCode'] = _errorCode;
-    map['errorMsg'] = _errorMsg;
-    return map;
-  }
-
-}
-
-/// curPage : 1
-/// datas : [{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28535,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/Vp1EMRjFYWHMWaJzLNQTBQ","niceDate":"1天前","niceShareDate":"5小时前","origin":"","prefix":"","projectLink":"","publishTime":1718121600000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718241323000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"Gradle直接Run和使用命令行编译有什么区别?","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28529,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/xT2lqZD3Ni1_pHhPZc_6Nw","niceDate":"2天前","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1718035200000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154637000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"受欢迎的鸿蒙工具库（harmony-utils）","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28532,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/b4DJDvs2FRExvrmF2T0X4Q","niceDate":"2天前","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1718035200000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154682000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"Android FCM 推送详解，出海应用必备","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":643,"chapterName":"ArkTS 语言","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28525,"isAdminAdd":false,"link":"https://juejin.cn/post/7376113820233433127","niceDate":"2天前","niceShareDate":"2天前","origin":"","prefix":"","projectLink":"","publishTime":1718025485000,"realSuperChapterId":639,"selfVisible":0,"shareDate":1718025485000,"shareUser":"","superChapterId":640,"superChapterName":"鸿蒙App开发入门 - 学习路径","tags":[],"title":"【拥抱鸿蒙】HarmonyOS NEXT深入理解应用程序框架","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28494,"isAdminAdd":false,"link":"https://juejin.cn/post/7364740313284444186","niceDate":"2天前","niceShareDate":"2024-06-01 09:29","origin":"","prefix":"","projectLink":"","publishTime":1718025408000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717205394000,"shareUser":"goweii","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"RecyclerView还能这样滚动对齐?","type":0,"userId":20382,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28506,"isAdminAdd":false,"link":"https://juejin.cn/post/7375370443731288101","niceDate":"2天前","niceShareDate":"2024-06-03 08:16","origin":"","prefix":"","projectLink":"","publishTime":1718025396000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717373817000,"shareUser":"goweii","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"第三节：源码解析协程的取消和异常流程 + 图解","type":0,"userId":20382,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28509,"isAdminAdd":false,"link":"https://juejin.cn/post/7344571968174669876","niceDate":"2天前","niceShareDate":"2024-06-03 09:40","origin":"","prefix":"","projectLink":"","publishTime":1718025394000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717378816000,"shareUser":"趣阅编程","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"全局视角下的APP性能优化经验","type":0,"userId":13273,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28513,"isAdminAdd":false,"link":"https://juejin.cn/post/7302322661958942756","niceDate":"2天前","niceShareDate":"2024-06-05 08:17","origin":"","prefix":"","projectLink":"","publishTime":1718025384000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717546650000,"shareUser":"goweii","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android进阶宝典 -- 还在使用Gson吗？试下kotlin-serialization的强大功能","type":0,"userId":20382,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"张鸿洋","canEdit":false,"chapterId":543,"chapterName":"Android技术周报","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28523,"isAdminAdd":false,"link":"https://www.wanandroid.com/blog/show/3663","niceDate":"2024-06-10 00:00","niceShareDate":"2024-06-10 00:10","origin":"","prefix":"","projectLink":"","publishTime":1717948800000,"realSuperChapterId":542,"selfVisible":0,"shareDate":1717949400000,"shareUser":"","superChapterId":543,"superChapterName":"技术周报","tags":[],"title":"Android 技术周刊 （2024-06-03 ~ 2024-06-10）","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28521,"isAdminAdd":false,"link":"https://juejin.cn/post/7377220397403865142","niceDate":"2024-06-07 10:13","niceShareDate":"2024-06-07 10:13","origin":"","prefix":"","projectLink":"","publishTime":1717726439000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717726439000,"shareUser":"图你怀中安稳","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android 现代应用架构更佳实践","type":0,"userId":41223,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28520,"isAdminAdd":false,"link":"https://bwshen.blog.csdn.net/article/details/125582365","niceDate":"2024-06-07 09:27","niceShareDate":"2024-06-07 09:27","origin":"","prefix":"","projectLink":"","publishTime":1717723673000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717723673000,"shareUser":"残页","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android自定义权限CVE漏洞分析 (IEEE论文)","type":0,"userId":12467,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28528,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/AukFb7KvoBUeB-KQiOw-xQ","niceDate":"2024-06-07 00:00","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1717689600000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154617000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"NDK开发、Native Hook、Android性能优化必知：动态链接","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28531,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/hr4oWnn6BVpQb3jOXhMyfg","niceDate":"2024-06-07 00:00","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1717689600000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154669000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"两台Android 设备同一个局域网下如何自由通信？","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28519,"isAdminAdd":false,"link":"https://juejin.cn/post/7376894518329294883","niceDate":"2024-06-06 13:58","niceShareDate":"2024-06-06 13:49","origin":"","prefix":"","projectLink":"","publishTime":1717653511000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717652944000,"shareUser":"RedRackham","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"阿伟，这个点了怎么还在写玩安卓鸿蒙版","type":0,"userId":143498,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28530,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/vFFsnx9zQ_Yuifc64wvTQQ","niceDate":"2024-06-06 00:00","niceShareDate":"1天前","origin":"","prefix":"","projectLink":"","publishTime":1717603200000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1718154655000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"ViewModel为什么可以保存数据？","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28516,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/6mtFmO1NhGm3vbJ6K9Gjsg","niceDate":"2024-06-04 00:00","niceShareDate":"2024-06-05 09:21","origin":"","prefix":"","projectLink":"","publishTime":1717430400000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717550465000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"Android存储系统成长记，来认识我的团队成员","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"张鸿洋","canEdit":false,"chapterId":543,"chapterName":"Android技术周报","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28504,"isAdminAdd":false,"link":"https://www.wanandroid.com/blog/show/3661","niceDate":"2024-06-03 00:00","niceShareDate":"2024-06-03 00:10","origin":"","prefix":"","projectLink":"","publishTime":1717344000000,"realSuperChapterId":542,"selfVisible":0,"shareDate":1717344600000,"shareUser":"","superChapterId":543,"superChapterName":"技术周报","tags":[],"title":"Android 技术周刊 （2024-05-27 ~ 2024-06-03）","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28514,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/yD_-6oM52LhWfSiD91D4Nw","niceDate":"2024-06-03 00:00","niceShareDate":"2024-06-05 09:20","origin":"","prefix":"","projectLink":"","publishTime":1717344000000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717550440000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"Android视频开发入门: VideoView、MediaPlayer、 FFmpeg、exoplayer...","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28515,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/cMBc4rUdPpBcDs8mpVAPkQ","niceDate":"2024-06-03 00:00","niceShareDate":"2024-06-05 09:20","origin":"","prefix":"","projectLink":"","publishTime":1717344000000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717550452000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"在Android地图上实现一个雨雪特效吧","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28497,"isAdminAdd":false,"link":"https://juejin.cn/post/7375035008262815778","niceDate":"2024-06-02 22:29","niceShareDate":"2024-06-02 22:24","origin":"","prefix":"","projectLink":"","publishTime":1717338560000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717338291000,"shareUser":"鸿洋","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android定位需要引用的动态库","type":0,"userId":2,"visible":1,"zan":0}]
-/// offset : 0
+/// curPage : 2
+/// datas : [{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28515,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/cMBc4rUdPpBcDs8mpVAPkQ","niceDate":"2024-06-03 00:00","niceShareDate":"2024-06-05 09:20","origin":"","prefix":"","projectLink":"","publishTime":1717344000000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717550452000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"在Android地图上实现一个雨雪特效吧","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28497,"isAdminAdd":false,"link":"https://juejin.cn/post/7375035008262815778","niceDate":"2024-06-02 22:29","niceShareDate":"2024-06-02 22:24","origin":"","prefix":"","projectLink":"","publishTime":1717338560000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717338291000,"shareUser":"鸿洋","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android定位需要引用的动态库","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28498,"isAdminAdd":false,"link":"https://juejin.cn/post/7374239850076307508","niceDate":"2024-06-02 22:29","niceShareDate":"2024-06-02 22:26","origin":"","prefix":"","projectLink":"","publishTime":1717338559000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717338408000,"shareUser":"鸿洋","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android软件渲染流程","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28499,"isAdminAdd":false,"link":"https://juejin.cn/post/7374224361559638050","niceDate":"2024-06-02 22:29","niceShareDate":"2024-06-02 22:26","origin":"","prefix":"","projectLink":"","publishTime":1717338557000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717338414000,"shareUser":"鸿洋","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"Android硬件渲染环境初始化","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28500,"isAdminAdd":false,"link":"https://juejin.cn/post/7375006864053977128","niceDate":"2024-06-02 22:29","niceShareDate":"2024-06-02 22:27","origin":"","prefix":"","projectLink":"","publishTime":1717338553000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1717338449000,"shareUser":"鸿洋","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"ViewModel为什么可以保存数据？","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":619,"chapterName":"流畅性","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28503,"isAdminAdd":false,"link":"https://juejin.cn/post/7374616167761444890","niceDate":"2024-06-02 22:29","niceShareDate":"2024-06-02 22:29","origin":"","prefix":"","projectLink":"","publishTime":1717338542000,"realSuperChapterId":617,"selfVisible":0,"shareDate":1717338542000,"shareUser":"","superChapterId":618,"superChapterName":"Android 性能优化 - 进阶篇 - 学习路径","tags":[],"title":"速度优化：充分利用 CPU 闲置时刻","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":619,"chapterName":"流畅性","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28502,"isAdminAdd":false,"link":"https://juejin.cn/post/7372813290650730511","niceDate":"2024-06-02 22:28","niceShareDate":"2024-06-02 22:28","origin":"","prefix":"","projectLink":"","publishTime":1717338535000,"realSuperChapterId":617,"selfVisible":0,"shareDate":1717338535000,"shareUser":"","superChapterId":618,"superChapterName":"Android 性能优化 - 进阶篇 - 学习路径","tags":[],"title":"Android App ANR 系列 3 ：ANR 案例分享","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":619,"chapterName":"流畅性","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28501,"isAdminAdd":false,"link":"https://juejin.cn/post/7372913965883637775","niceDate":"2024-06-02 22:28","niceShareDate":"2024-06-02 22:28","origin":"","prefix":"","projectLink":"","publishTime":1717338523000,"realSuperChapterId":617,"selfVisible":0,"shareDate":1717338523000,"shareUser":"","superChapterId":618,"superChapterName":"Android 性能优化 - 进阶篇 - 学习路径","tags":[],"title":"Android App ANR 系列 2 ：ANR 分析套路和关键 Log 介绍","type":0,"userId":2,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28507,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/Sr5pNuQySGw9uDE3VB2zaQ","niceDate":"2024-05-31 00:00","niceShareDate":"2024-06-03 09:13","origin":"","prefix":"","projectLink":"","publishTime":1717084800000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717377232000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"OpenHarmony源码解读系列：ArkUI Engine 导读","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28508,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/_nyK7vLMixlnjjos1s_g5Q","niceDate":"2024-05-31 00:00","niceShareDate":"2024-06-03 09:14","origin":"","prefix":"","projectLink":"","publishTime":1717084800000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717377245000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"NoClassDefFoundError和ClassNotFoundException的原因","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28490,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/IwEmOtS26qR482lJZaM8iQ","niceDate":"2024-05-30 00:00","niceShareDate":"2024-05-31 09:09","origin":"","prefix":"","projectLink":"","publishTime":1716998400000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717117741000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"窥探 Android 15 的新功能与适配","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28491,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/TNsDMb-t1jDW-MR7CtMGBQ","niceDate":"2024-05-30 00:00","niceShareDate":"2024-05-31 09:09","origin":"","prefix":"","projectLink":"","publishTime":1716998400000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717117753000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"船新版本之学习屏幕刷新机制引发的画面卡顿监控与优化的思考","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"谷歌开发者","canEdit":false,"chapterId":415,"chapterName":"谷歌开发者","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28492,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/VyJXY0OGFotV6vqoz6YLDg","niceDate":"2024-05-30 00:00","niceShareDate":"2024-05-31 09:09","origin":"","prefix":"","projectLink":"","publishTime":1716998400000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717117765000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/415/1"}],"title":"更新详情 | Flutter 3.22 与 Dart 3.4","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28487,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/dfGqtwfSWDby2A04bBNV6A","niceDate":"2024-05-29 00:00","niceShareDate":"2024-05-30 09:11","origin":"","prefix":"","projectLink":"","publishTime":1716912000000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1717031519000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"Android Region碰撞检测问题优化","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"鸿洋","canEdit":false,"chapterId":408,"chapterName":"鸿洋","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28483,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/oumFr_bex_sRBaA1Yh2ZLg","niceDate":"2024-05-28 00:00","niceShareDate":"2024-05-29 09:13","origin":"","prefix":"","projectLink":"","publishTime":1716825600000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1716945197000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/408/1"}],"title":"从MVI架构中学习Kotlin Flow的几种特性与用法","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28472,"isAdminAdd":false,"link":"https://juejin.cn/post/7372503361361100850","niceDate":"2024-05-27 10:44","niceShareDate":"2024-05-27 10:44","origin":"","prefix":"","projectLink":"","publishTime":1716777878000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1716777878000,"shareUser":"linversion","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"安卓开发者在面试中应该怎么回答协程挂起的原理","type":0,"userId":70466,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"张鸿洋","canEdit":false,"chapterId":543,"chapterName":"Android技术周报","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28469,"isAdminAdd":false,"link":"https://www.wanandroid.com/blog/show/3659","niceDate":"2024-05-27 00:00","niceShareDate":"2024-05-27 00:10","origin":"","prefix":"","projectLink":"","publishTime":1716739200000,"realSuperChapterId":542,"selfVisible":0,"shareDate":1716739800000,"shareUser":"","superChapterId":543,"superChapterName":"技术周报","tags":[],"title":"Android 技术周刊 （2024-05-20 ~ 2024-05-27）","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"郭霖","canEdit":false,"chapterId":409,"chapterName":"郭霖","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28478,"isAdminAdd":false,"link":"https://mp.weixin.qq.com/s/-bPi0EMo32DgvdMj8hgKDw","niceDate":"2024-05-27 00:00","niceShareDate":"2024-05-28 09:15","origin":"","prefix":"","projectLink":"","publishTime":1716739200000,"realSuperChapterId":407,"selfVisible":0,"shareDate":1716858922000,"shareUser":"","superChapterId":408,"superChapterName":"公众号","tags":[{"name":"公众号","url":"/wxarticle/list/409/1"}],"title":"用华为鸿蒙手写ECharts","type":0,"userId":-1,"visible":1,"zan":0},{"adminAdd":false,"apkLink":"","audit":1,"author":"","canEdit":false,"chapterId":502,"chapterName":"自助","collect":false,"courseId":13,"desc":"","descMd":"","envelopePic":"","fresh":false,"host":"","id":28463,"isAdminAdd":false,"link":"https://juejin.cn/post/7372459789942161418","niceDate":"2024-05-26 13:04","niceShareDate":"2024-05-26 11:51","origin":"","prefix":"","projectLink":"","publishTime":1716699878000,"realSuperChapterId":493,"selfVisible":0,"shareDate":1716695493000,"shareUser":"鸿洋","superChapterId":494,"superChapterName":"广场Tab","tags":[],"title":"优雅实现网络请求：协程+Flow+Retrofit+OkHttp","type":0,"userId":2,"visible":1,"zan":0}]
+/// offset : 20
 /// over : false
 /// pageCount : 772
 /// size : 20
-/// total : 15439
+/// total : 15440
 
-class HomeData {
-  HomeData({
-      num? curPage,
-      List<HomeListItemData>? datas,
-      num? offset,
-      bool? over,
-      num? pageCount,
-      num? size,
-      num? total,}){
+class HomeListData {
+  HomeListData({
+    num? curPage,
+    List<HomeListItemData>? datas,
+    num? offset,
+    bool? over,
+    num? pageCount,
+    num? size,
+    num? total,
+  }) {
     _curPage = curPage;
     _datas = datas;
     _offset = offset;
@@ -67,9 +23,9 @@ class HomeData {
     _pageCount = pageCount;
     _size = size;
     _total = total;
-}
+  }
 
-  HomeData.fromJson(dynamic json) {
+  HomeListData.fromJson(dynamic json) {
     _curPage = json['curPage'];
     if (json['datas'] != null) {
       _datas = [];
@@ -83,6 +39,7 @@ class HomeData {
     _size = json['size'];
     _total = json['total'];
   }
+
   num? _curPage;
   List<HomeListItemData>? _datas;
   num? _offset;
@@ -90,27 +47,38 @@ class HomeData {
   num? _pageCount;
   num? _size;
   num? _total;
-HomeData copyWith({  num? curPage,
-  List<HomeListItemData>? datas,
-  num? offset,
-  bool? over,
-  num? pageCount,
-  num? size,
-  num? total,
-}) => HomeData(  curPage: curPage ?? _curPage,
-  datas: datas ?? _datas,
-  offset: offset ?? _offset,
-  over: over ?? _over,
-  pageCount: pageCount ?? _pageCount,
-  size: size ?? _size,
-  total: total ?? _total,
-);
+
+  HomeListData copyWith({
+    num? curPage,
+    List<HomeListItemData>? datas,
+    num? offset,
+    bool? over,
+    num? pageCount,
+    num? size,
+    num? total,
+  }) =>
+      HomeListData(
+        curPage: curPage ?? _curPage,
+        datas: datas ?? _datas,
+        offset: offset ?? _offset,
+        over: over ?? _over,
+        pageCount: pageCount ?? _pageCount,
+        size: size ?? _size,
+        total: total ?? _total,
+      );
+
   num? get curPage => _curPage;
+
   List<HomeListItemData>? get datas => _datas;
+
   num? get offset => _offset;
+
   bool? get over => _over;
+
   num? get pageCount => _pageCount;
+
   num? get size => _size;
+
   num? get total => _total;
 
   Map<String, dynamic> toJson() {
@@ -126,16 +94,15 @@ HomeData copyWith({  num? curPage,
     map['total'] = _total;
     return map;
   }
-
 }
 
 /// adminAdd : false
 /// apkLink : ""
 /// audit : 1
-/// author : "鸿洋"
+/// author : "郭霖"
 /// canEdit : false
-/// chapterId : 408
-/// chapterName : "鸿洋"
+/// chapterId : 409
+/// chapterName : "郭霖"
 /// collect : false
 /// courseId : 13
 /// desc : ""
@@ -143,23 +110,23 @@ HomeData copyWith({  num? curPage,
 /// envelopePic : ""
 /// fresh : false
 /// host : ""
-/// id : 28535
+/// id : 28515
 /// isAdminAdd : false
-/// link : "https://mp.weixin.qq.com/s/Vp1EMRjFYWHMWaJzLNQTBQ"
-/// niceDate : "1天前"
-/// niceShareDate : "5小时前"
+/// link : "https://mp.weixin.qq.com/s/cMBc4rUdPpBcDs8mpVAPkQ"
+/// niceDate : "2024-06-03 00:00"
+/// niceShareDate : "2024-06-05 09:20"
 /// origin : ""
 /// prefix : ""
 /// projectLink : ""
-/// publishTime : 1718121600000
+/// publishTime : 1717344000000
 /// realSuperChapterId : 407
 /// selfVisible : 0
-/// shareDate : 1718241323000
+/// shareDate : 1717550452000
 /// shareUser : ""
 /// superChapterId : 408
 /// superChapterName : "公众号"
-/// tags : [{"name":"公众号","url":"/wxarticle/list/408/1"}]
-/// title : "Gradle直接Run和使用命令行编译有什么区别?"
+/// tags : [{"name":"公众号","url":"/wxarticle/list/409/1"}]
+/// title : "在Android地图上实现一个雨雪特效吧"
 /// type : 0
 /// userId : -1
 /// visible : 1
@@ -167,41 +134,42 @@ HomeData copyWith({  num? curPage,
 
 class HomeListItemData {
   HomeListItemData({
-      bool? adminAdd,
-      String? apkLink,
-      num? audit,
-      String? author,
-      bool? canEdit,
-      num? chapterId,
-      String? chapterName,
-      bool? collect,
-      num? courseId,
-      String? desc,
-      String? descMd,
-      String? envelopePic,
-      bool? fresh,
-      String? host,
-      num? id,
-      bool? isAdminAdd,
-      String? link,
-      String? niceDate,
-      String? niceShareDate,
-      String? origin,
-      String? prefix,
-      String? projectLink,
-      num? publishTime,
-      num? realSuperChapterId,
-      num? selfVisible,
-      num? shareDate,
-      String? shareUser,
-      num? superChapterId,
-      String? superChapterName,
-      List<Tags>? tags,
-      String? title,
-      num? type,
-      num? userId,
-      num? visible,
-      num? zan,}){
+    bool? adminAdd,
+    String? apkLink,
+    num? audit,
+    String? author,
+    bool? canEdit,
+    num? chapterId,
+    String? chapterName,
+    bool? collect,
+    num? courseId,
+    String? desc,
+    String? descMd,
+    String? envelopePic,
+    bool? fresh,
+    String? host,
+    num? id,
+    bool? isAdminAdd,
+    String? link,
+    String? niceDate,
+    String? niceShareDate,
+    String? origin,
+    String? prefix,
+    String? projectLink,
+    num? publishTime,
+    num? realSuperChapterId,
+    num? selfVisible,
+    num? shareDate,
+    String? shareUser,
+    num? superChapterId,
+    String? superChapterName,
+    List<Tags>? tags,
+    String? title,
+    num? type,
+    num? userId,
+    num? visible,
+    num? zan,
+  }) {
     _adminAdd = adminAdd;
     _apkLink = apkLink;
     _audit = audit;
@@ -237,7 +205,7 @@ class HomeListItemData {
     _userId = userId;
     _visible = visible;
     _zan = zan;
-}
+  }
 
   HomeListItemData.fromJson(dynamic json) {
     _adminAdd = json['adminAdd'];
@@ -281,6 +249,7 @@ class HomeListItemData {
     _visible = json['visible'];
     _zan = json['zan'];
   }
+
   bool? _adminAdd;
   String? _apkLink;
   num? _audit;
@@ -316,111 +285,150 @@ class HomeListItemData {
   num? _userId;
   num? _visible;
   num? _zan;
-HomeListItemData copyWith({  bool? adminAdd,
-  String? apkLink,
-  num? audit,
-  String? author,
-  bool? canEdit,
-  num? chapterId,
-  String? chapterName,
-  bool? collect,
-  num? courseId,
-  String? desc,
-  String? descMd,
-  String? envelopePic,
-  bool? fresh,
-  String? host,
-  num? id,
-  bool? isAdminAdd,
-  String? link,
-  String? niceDate,
-  String? niceShareDate,
-  String? origin,
-  String? prefix,
-  String? projectLink,
-  num? publishTime,
-  num? realSuperChapterId,
-  num? selfVisible,
-  num? shareDate,
-  String? shareUser,
-  num? superChapterId,
-  String? superChapterName,
-  List<Tags>? tags,
-  String? title,
-  num? type,
-  num? userId,
-  num? visible,
-  num? zan,
-}) => HomeListItemData(  adminAdd: adminAdd ?? _adminAdd,
-  apkLink: apkLink ?? _apkLink,
-  audit: audit ?? _audit,
-  author: author ?? _author,
-  canEdit: canEdit ?? _canEdit,
-  chapterId: chapterId ?? _chapterId,
-  chapterName: chapterName ?? _chapterName,
-  collect: collect ?? _collect,
-  courseId: courseId ?? _courseId,
-  desc: desc ?? _desc,
-  descMd: descMd ?? _descMd,
-  envelopePic: envelopePic ?? _envelopePic,
-  fresh: fresh ?? _fresh,
-  host: host ?? _host,
-  id: id ?? _id,
-  isAdminAdd: isAdminAdd ?? _isAdminAdd,
-  link: link ?? _link,
-  niceDate: niceDate ?? _niceDate,
-  niceShareDate: niceShareDate ?? _niceShareDate,
-  origin: origin ?? _origin,
-  prefix: prefix ?? _prefix,
-  projectLink: projectLink ?? _projectLink,
-  publishTime: publishTime ?? _publishTime,
-  realSuperChapterId: realSuperChapterId ?? _realSuperChapterId,
-  selfVisible: selfVisible ?? _selfVisible,
-  shareDate: shareDate ?? _shareDate,
-  shareUser: shareUser ?? _shareUser,
-  superChapterId: superChapterId ?? _superChapterId,
-  superChapterName: superChapterName ?? _superChapterName,
-  tags: tags ?? _tags,
-  title: title ?? _title,
-  type: type ?? _type,
-  userId: userId ?? _userId,
-  visible: visible ?? _visible,
-  zan: zan ?? _zan,
-);
+
+  HomeListItemData copyWith({
+    bool? adminAdd,
+    String? apkLink,
+    num? audit,
+    String? author,
+    bool? canEdit,
+    num? chapterId,
+    String? chapterName,
+    bool? collect,
+    num? courseId,
+    String? desc,
+    String? descMd,
+    String? envelopePic,
+    bool? fresh,
+    String? host,
+    num? id,
+    bool? isAdminAdd,
+    String? link,
+    String? niceDate,
+    String? niceShareDate,
+    String? origin,
+    String? prefix,
+    String? projectLink,
+    num? publishTime,
+    num? realSuperChapterId,
+    num? selfVisible,
+    num? shareDate,
+    String? shareUser,
+    num? superChapterId,
+    String? superChapterName,
+    List<Tags>? tags,
+    String? title,
+    num? type,
+    num? userId,
+    num? visible,
+    num? zan,
+  }) =>
+      HomeListItemData(
+        adminAdd: adminAdd ?? _adminAdd,
+        apkLink: apkLink ?? _apkLink,
+        audit: audit ?? _audit,
+        author: author ?? _author,
+        canEdit: canEdit ?? _canEdit,
+        chapterId: chapterId ?? _chapterId,
+        chapterName: chapterName ?? _chapterName,
+        collect: collect ?? _collect,
+        courseId: courseId ?? _courseId,
+        desc: desc ?? _desc,
+        descMd: descMd ?? _descMd,
+        envelopePic: envelopePic ?? _envelopePic,
+        fresh: fresh ?? _fresh,
+        host: host ?? _host,
+        id: id ?? _id,
+        isAdminAdd: isAdminAdd ?? _isAdminAdd,
+        link: link ?? _link,
+        niceDate: niceDate ?? _niceDate,
+        niceShareDate: niceShareDate ?? _niceShareDate,
+        origin: origin ?? _origin,
+        prefix: prefix ?? _prefix,
+        projectLink: projectLink ?? _projectLink,
+        publishTime: publishTime ?? _publishTime,
+        realSuperChapterId: realSuperChapterId ?? _realSuperChapterId,
+        selfVisible: selfVisible ?? _selfVisible,
+        shareDate: shareDate ?? _shareDate,
+        shareUser: shareUser ?? _shareUser,
+        superChapterId: superChapterId ?? _superChapterId,
+        superChapterName: superChapterName ?? _superChapterName,
+        tags: tags ?? _tags,
+        title: title ?? _title,
+        type: type ?? _type,
+        userId: userId ?? _userId,
+        visible: visible ?? _visible,
+        zan: zan ?? _zan,
+      );
+
   bool? get adminAdd => _adminAdd;
+
   String? get apkLink => _apkLink;
+
   num? get audit => _audit;
+
   String? get author => _author;
+
   bool? get canEdit => _canEdit;
+
   num? get chapterId => _chapterId;
+
   String? get chapterName => _chapterName;
+
   bool? get collect => _collect;
+
   num? get courseId => _courseId;
+
   String? get desc => _desc;
+
   String? get descMd => _descMd;
+
   String? get envelopePic => _envelopePic;
+
   bool? get fresh => _fresh;
+
   String? get host => _host;
+
   num? get id => _id;
+
   bool? get isAdminAdd => _isAdminAdd;
+
   String? get link => _link;
+
   String? get niceDate => _niceDate;
+
   String? get niceShareDate => _niceShareDate;
+
   String? get origin => _origin;
+
   String? get prefix => _prefix;
+
   String? get projectLink => _projectLink;
+
   num? get publishTime => _publishTime;
+
   num? get realSuperChapterId => _realSuperChapterId;
+
   num? get selfVisible => _selfVisible;
+
   num? get shareDate => _shareDate;
+
   String? get shareUser => _shareUser;
+
   num? get superChapterId => _superChapterId;
+
   String? get superChapterName => _superChapterName;
+
   List<Tags>? get tags => _tags;
+
   String? get title => _title;
+
   num? get type => _type;
+
   num? get userId => _userId;
+
   num? get visible => _visible;
+
   num? get zan => _zan;
 
   Map<String, dynamic> toJson() {
@@ -464,32 +472,39 @@ HomeListItemData copyWith({  bool? adminAdd,
     map['zan'] = _zan;
     return map;
   }
-
 }
 
 /// name : "公众号"
-/// url : "/wxarticle/list/408/1"
+/// url : "/wxarticle/list/409/1"
 
 class Tags {
   Tags({
-      String? name,
-      String? url,}){
+    String? name,
+    String? url,
+  }) {
     _name = name;
     _url = url;
-}
+  }
 
   Tags.fromJson(dynamic json) {
     _name = json['name'];
     _url = json['url'];
   }
+
   String? _name;
   String? _url;
-Tags copyWith({  String? name,
-  String? url,
-}) => Tags(  name: name ?? _name,
-  url: url ?? _url,
-);
+
+  Tags copyWith({
+    String? name,
+    String? url,
+  }) =>
+      Tags(
+        name: name ?? _name,
+        url: url ?? _url,
+      );
+
   String? get name => _name;
+
   String? get url => _url;
 
   Map<String, dynamic> toJson() {
@@ -498,5 +513,4 @@ Tags copyWith({  String? name,
     map['url'] = _url;
     return map;
   }
-
 }

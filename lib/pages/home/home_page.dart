@@ -1,4 +1,3 @@
-import 'package:client_app/datas/home_banner_data.dart';
 import 'package:client_app/datas/home_list_data.dart';
 import 'package:client_app/pages/home/home_vm.dart';
 import 'package:client_app/route/routes.dart';
@@ -73,7 +72,7 @@ class _HomePageState extends State<HomePage> {
               return Container(
                 width: double.infinity,
                 height: 120,
-                child: Image.network(vm.bannerList?[index].imagePath ?? ""),
+                child: Image.network(vm.bannerList?[index]?.imagePath ?? ""),
                 margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 0.0),
               );
             }),

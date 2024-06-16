@@ -1,5 +1,6 @@
 import 'package:client_app/http/http_method.dart';
 import 'package:client_app/http/print_log_interceptor.dart';
+import 'package:client_app/http/resp_insterceptor.dart';
 import 'package:dio/dio.dart';
 
 class DioInstance {
@@ -10,6 +11,7 @@ class DioInstance {
   static DioInstance instance() {
     return _instance ??= DioInstance._();
   }
+
   final Dio _dio = Dio();
 
   final _defaultTime = const Duration(seconds: 30);
@@ -23,7 +25,6 @@ class DioInstance {
     ResponseType? responseType = ResponseType.json,
     String? contentType,
   }) {
-
     _dio.options = BaseOptions(
       method: httpMethod,
       baseUrl: baseUrl,
@@ -31,7 +32,10 @@ class DioInstance {
       receiveTimeout: receiveTimeout ?? _defaultTime,
       sendTimeout: sendTimeout ?? _defaultTime,
     );
+    //  打印拦截
     _dio.interceptors.add(PrintLogInterceptor());
+    //  拦截处理
+    _dio.interceptors.add(ResponseInterceptor());
   }
 
   // get 请求
@@ -58,7 +62,6 @@ class DioInstance {
       CancelToken? cancelToken}) async {
     return await _dio.post(path,
         queryParameters: queryParameters,
-
         data: data,
         cancelToken: cancelToken,
         options: option ??
