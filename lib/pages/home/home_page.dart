@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 import 'package:provider/provider.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,6 +17,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   HomeViewModel viewModel = HomeViewModel();
+  RefreshController refreshController = RefreshController();
 
   @override
   void initState() {
@@ -32,14 +34,33 @@ class _HomePageState extends State<HomePage> {
       },
       child: Scaffold(
         body: SafeArea(
+          child: SmartRefresher(
+            controller: refreshController,
+            enablePullUp: true,
+            enablePullDown: true,
+            header: ClassicFooter(),
+            footer: ClassicFooter(),
+            //    上拉加载回调
+            onLoading: () {},
+            onRefresh: () {
+              //    下拉加载回调
+              viewModel.getBanner().then((value) {
+                viewModel.initHomeList().then((value) {
+                  refreshController.refreshCompleted();
+                });
+              });
+              viewModel.initHomeList();
+            },
             child: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              _banner(),
-              listView(),
-            ],
+              child: Column(
+                children: <Widget>[
+                  _banner(),
+                  listView(),
+                ],
+              ),
+            ),
           ),
-        )),
+        ),
       ),
     );
   }

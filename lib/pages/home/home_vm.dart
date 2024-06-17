@@ -8,9 +8,10 @@ import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomeViewModel with ChangeNotifier {
-  List<ListBannerItem?>? bannerList=[];
+  List<ListBannerItem?>? bannerList = [];
 
-  List<HomeListItemData>? homeDataList=[];
+  List<HomeListItemData>? homeDataList = [];
+  int pageCount = 1;
 
   //  获取banner
   Future getBanner() async {
@@ -18,22 +19,35 @@ class HomeViewModel with ChangeNotifier {
     notifyListeners();
   }
 
-  Future initHomeList() async {
+  Future initHomeList(bool lodeMore) async {
+    if (lodeMore){
+      pageCount++;
+    }else{
+      pageCount=1;
+      homeDataList.clear();
+    };
     getTopList();
-    getHomeList();
+    getHomeList(false);
   }
 
   // 获取首页列表
-  Future getHomeList() async {
-    homeDataList?.addAll(await Api.intertance.getHomeList() ?? []);
+  Future getHomeList(bool lodeMore) async {
+    if (lodeMore) {
+      pageCount++;
+    } else {
+      pageCount = 1;
+    }
+    homeDataList
+        ?.addAll(await Api.intertance.getHomeList(pageCount.toString()) ?? []);
     notifyListeners();
   }
 
 // 获取首页置顶列表
-  Future getTopList() async {
-    List<HomeListItemData>? topList =
-        await Api.intertance.getHomeTopList() ?? [];
-    homeDataList?.clear();
-    homeDataList?.addAll(topList);
+  Future<List<HomeListItemData>?>? getTopList(bool lodeMore) async {
+    if (lodeMore) {
+      return [];
+    }
+    List<HomeListItemData>? topList = await Api.intertance.getHomeTopList() ?? [];
+    return topList;
   }
 }
