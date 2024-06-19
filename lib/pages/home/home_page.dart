@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     viewModel.getBanner();
-    viewModel.initHomeList();
+    viewModel.initHomeList(false);
   }
 
   @override
@@ -38,18 +38,20 @@ class _HomePageState extends State<HomePage> {
             controller: refreshController,
             enablePullUp: true,
             enablePullDown: true,
-            header: ClassicFooter(),
-            footer: ClassicFooter(),
-            //    上拉加载回调
-            onLoading: () {},
+            // header: ClassicFooter(),
+            // footer: ClassicFooter(),
+
+            onLoading: () {
+              viewModel.initHomeList(true, callback: (loadMore) {
+                refreshController.loadComplete();
+              });
+            },
             onRefresh: () {
-              //    下拉加载回调
               viewModel.getBanner().then((value) {
-                viewModel.initHomeList().then((value) {
+                viewModel.initHomeList(false, callback: (loadMore) {
                   refreshController.refreshCompleted();
                 });
               });
-              viewModel.initHomeList();
             },
             child: SingleChildScrollView(
               child: Column(

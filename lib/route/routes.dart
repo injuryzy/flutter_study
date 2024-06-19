@@ -1,12 +1,12 @@
-import 'package:client_app/pages/home/home_page.dart';
+import 'package:client_app/pages/tab_page.dart';
 import 'package:client_app/pages/web_view_page.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case RoutePath.home:
-        return pageRoute(HomePage(), settings: settings);
+      case RoutePath.tab:
+        return pageRoute(TabPage(), settings: settings);
       case RoutePath.webViewPage:
         return pageRoute(WebViewPage(title: "首页"), settings: settings);
     }
@@ -32,6 +32,6 @@ class Routes {
 }
 
 class RoutePath {
-  static const String home = "/";
+  static const String tab = "/";
   static const String webViewPage = "/web_view_page";
 }

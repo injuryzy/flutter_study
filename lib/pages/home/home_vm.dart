@@ -11,7 +11,7 @@ class HomeViewModel with ChangeNotifier {
   List<ListBannerItem?>? bannerList = [];
 
   List<HomeListItemData>? homeDataList = [];
-  int pageCount = 1;
+  int pageCount = 0;
 
   //  获取banner
   Future getBanner() async {
@@ -19,27 +19,34 @@ class HomeViewModel with ChangeNotifier {
     notifyListeners();
   }
 
-  Future initHomeList(bool lodeMore) async {
-    if (lodeMore){
-      pageCount++;
-    }else{
-      pageCount=1;
-      homeDataList.clear();
-    };
-    getTopList();
-    getHomeList(false);
-  }
-
-  // 获取首页列表
-  Future getHomeList(bool lodeMore) async {
+  Future initHomeList(bool lodeMore, {ValueChanged<bool>? callback}) async {
     if (lodeMore) {
       pageCount++;
     } else {
       pageCount = 1;
+      homeDataList?.clear();
     }
-    homeDataList
-        ?.addAll(await Api.intertance.getHomeList(pageCount.toString()) ?? []);
-    notifyListeners();
+
+    getTopList(lodeMore);
+    getHomeList(lodeMore).then((allList) {
+      homeDataList?.addAll(allList ?? []);
+      notifyListeners();
+      callback?.call(lodeMore);
+    });
+  }
+
+  // 获取列表数据
+  Future<List<HomeListItemData>?> getHomeList(bool lodeMore) async {
+    List<HomeListItemData>? list =
+        await Api.intertance.getHomeList(pageCount.toString());
+    if (list != null && list.isNotEmpty) {
+      return list;
+    } else {
+      /* if (lodeMore && pageCount > 0) {
+        pageCount--;
+      }*/
+      return [];
+    }
   }
 
 // 获取首页置顶列表
@@ -47,7 +54,8 @@ class HomeViewModel with ChangeNotifier {
     if (lodeMore) {
       return [];
     }
-    List<HomeListItemData>? topList = await Api.intertance.getHomeTopList() ?? [];
+    List<HomeListItemData>? topList =
+        await Api.intertance.getHomeTopList() ?? [];
     return topList;
   }
 }
