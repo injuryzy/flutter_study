@@ -1,5 +1,7 @@
+import 'package:client_app/repository/datas/common_website.dart';
 import 'package:client_app/repository/datas/home_banner_data.dart';
 import 'package:client_app/repository/datas/home_list_data.dart';
+import 'package:client_app/repository/datas/hot_key_vm.dart';
 import 'package:dio/dio.dart';
 import 'package:client_app/http/dio_instance.dart';
 
@@ -30,5 +32,20 @@ class Api {
         await DioInstance.instance().get(path: "/article/top/json");
     HomeTopListData homeData = HomeTopListData.fromJson(response.data);
     return homeData.topList;
+  }
+
+  // 获取热点数据
+  Future<List<HotKeyVm>?> getHotKeyList() async {
+    Response response = await DioInstance.instance().get(path: "/hotkey/json");
+    HotKeyList hotKeyList = HotKeyList.fromJson(response.data);
+    return hotKeyList.list;
+  }
+
+  // 获取常用网站数据
+  Future<List<CommonWebsite>?> getCommonWebSiteList() async {
+    Response response = await DioInstance.instance().get(path: "/friend/json");
+    CommonWebsiteListData commonWebsiteListData =
+        CommonWebsiteListData.fromJson(response.data);
+    return commonWebsiteListData.websiteList;
   }
 }

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class WebViewPage extends StatefulWidget {
-  final String title;
+  final String? title;
 
-  const WebViewPage({super.key, required this.title});
+  final String? link;
+
+  const WebViewPage({super.key, this.title, this.link});
 
   @override
   State<WebViewPage> createState() => _WebViewPageState();
