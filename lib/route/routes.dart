@@ -1,4 +1,5 @@
-import 'package:client_app/pages/login/login_page.dart';
+import 'package:client_app/pages/auth/login_page.dart';
+import 'package:client_app/pages/auth/register_page.dart';
 import 'package:client_app/pages/tab_page.dart';
 import 'package:client_app/pages/web_view_page.dart';
 import 'package:flutter/material.dart';
@@ -10,10 +11,10 @@ class Routes {
         return pageRoute(TabPage(), settings: settings);
       case RoutePath.webViewPage:
         return pageRoute(WebViewPage(title: "首页"), settings: settings);
-        case RoutePath.loginPage:
+      case RoutePath.loginPage:
         return pageRoute(LoginPage(), settings: settings);
-        case RoutePath.registerPage:
-        return pageRoute(WebViewPage(title: "注册"), settings: settings);
+      case RoutePath.registerPage:
+        return pageRoute(RegisterPage(), settings: settings);
     }
     return pageRoute(
       Scaffold(
