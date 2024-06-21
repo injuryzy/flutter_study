@@ -12,7 +12,7 @@ class ResponseInterceptor extends Interceptor {
           if (resp.data == null) {
             handler.next(
                 Response(requestOptions: response.requestOptions, data: true));
-          }else{
+          } else {
             handler.next(Response(
                 requestOptions: response.requestOptions, data: resp.data));
           }
@@ -20,6 +20,9 @@ class ResponseInterceptor extends Interceptor {
           handler.reject(DioException(
               requestOptions: response.requestOptions, message: "未登录"));
           showToast("请先登录");
+        } else {
+          handler.next(Response(
+              requestOptions: response.requestOptions, data: resp.errorMsg));
         }
       } catch (e) {
         handler.reject(DioException(

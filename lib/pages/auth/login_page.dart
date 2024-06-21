@@ -1,7 +1,9 @@
 import 'package:client_app/route/routes.dart';
 import 'package:flutter/material.dart';
 
-import '../../common_ui/common_style.dart';
+import 'package:client_app/common_ui/common_style.dart';
+import 'package:oktoast/oktoast.dart';
+import 'auth_vm.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -12,11 +14,14 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   TextEditingController? inputController;
+  TextEditingController? passwordController;
+  AuthViewMode authViewMode = AuthViewMode();
 
   @override
   void initState() {
     super.initState();
-    inputController = TextEditingController(text: "");
+    inputController = TextEditingController();
+    passwordController = TextEditingController();
   }
 
   @override
@@ -29,15 +34,23 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            commonInput("请输入用户名"),
+            commonInput("请输入用户名", controller: inputController),
             SizedBox(
               height: 20,
             ),
-            commonInput("输入密码", isPassword: true),
+            commonInput("输入密码",
+                isPassword: true, controller: passwordController),
             whiteBordButton(
                 title: "点击登录",
                 onTap: () {
-                  print("点击登录");
+                  authViewMode.loginInfo.password =
+                      passwordController?.value.text;
+                  authViewMode.loginInfo.name = inputController?.value.text;
+                  authViewMode.login().then((e) {
+                    if (e) {
+                      showToast("登录成功");
+                    }
+                  });
                 }),
             Container(
               child: GestureDetector(

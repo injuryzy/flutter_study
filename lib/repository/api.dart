@@ -1,9 +1,11 @@
+import 'package:client_app/http/base_model.dart';
 import 'package:client_app/repository/datas/common_website.dart';
 import 'package:client_app/repository/datas/home_banner_data.dart';
 import 'package:client_app/repository/datas/home_list_data.dart';
 import 'package:client_app/repository/datas/hot_key_vm.dart';
 import 'package:dio/dio.dart';
 import 'package:client_app/http/dio_instance.dart';
+import 'package:oktoast/oktoast.dart';
 
 class Api {
   static Api intertance = Api._();
@@ -47,5 +49,36 @@ class Api {
     CommonWebsiteListData commonWebsiteListData =
         CommonWebsiteListData.fromJson(response.data);
     return commonWebsiteListData.websiteList;
+  }
+
+//    注册
+  Future<bool> register(
+      {String? name, String? password, String? rePassword}) async {
+    Response response = await DioInstance.instance().post(
+        path: "/user/register",
+        queryParameters: {
+          "username": name,
+          "password": password,
+          "repassword": rePassword
+        });
+    if (response.data is String) {
+      showToast(response.data);
+      return false;
+    }
+    return true;
+  }
+
+  //    登录
+  Future<bool> login({String? name, String? password}) async {
+    Response response = await DioInstance.instance()
+        .post(path: "/user/login", queryParameters: {
+      "username": name,
+      "password": password,
+    });
+    if (response.data is String) {
+      showToast(response.data);
+      return false;
+    }
+    return true;
   }
 }

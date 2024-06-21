@@ -2,6 +2,7 @@ import 'package:client_app/http/dio_instance.dart';
 import 'package:client_app/pages/home/home_page.dart';
 import 'package:client_app/route/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:oktoast/oktoast.dart';
 
 void main() {
   DioInstance.instance().initDio(baseUrl: "https://www.wanandroid.com");
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return OKToast(
+        child: MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -38,6 +40,6 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: Routes.generateRoute,
       initialRoute: RoutePath.tab,
       // home:  HomePage(),
-    );
+    ));
   }
 }
