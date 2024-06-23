@@ -1,3 +1,4 @@
+import 'package:client_app/http/cookie_interceptor.dart';
 import 'package:client_app/http/http_method.dart';
 import 'package:client_app/http/print_log_interceptor.dart';
 import 'package:client_app/http/resp_insterceptor.dart';
@@ -32,10 +33,12 @@ class DioInstance {
       receiveTimeout: receiveTimeout ?? _defaultTime,
       sendTimeout: sendTimeout ?? _defaultTime,
     );
+    _dio.interceptors.add(CookieInterceptor());
     //  打印拦截
     _dio.interceptors.add(PrintLogInterceptor());
     //  拦截处理
     _dio.interceptors.add(ResponseInterceptor());
+
   }
 
   // get 请求

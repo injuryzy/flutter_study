@@ -7,6 +7,8 @@ import 'package:dio/dio.dart';
 import 'package:client_app/http/dio_instance.dart';
 import 'package:oktoast/oktoast.dart';
 
+import 'datas/knowledge_list_data.dart';
+
 class Api {
   static Api intertance = Api._();
 
@@ -80,5 +82,13 @@ class Api {
       return false;
     }
     return true;
+  }
+
+  // 获取体系数组
+  Future<List<KnowledgeItemData>?> getKnowledgeListData() async {
+    Response response = await DioInstance.instance().get(path: "/tree/json");
+    KnowledgeListData knowledgeListData =
+        KnowledgeListData.fromJson(response.data);
+    return knowledgeListData.list;
   }
 }
