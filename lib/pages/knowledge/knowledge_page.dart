@@ -15,7 +15,6 @@ class _KonwledgePageState extends State<KnowledgePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _knowledgeVm.getKnowledgeListData();
   }
@@ -46,7 +45,7 @@ class _KonwledgePageState extends State<KnowledgePage> {
       margin: EdgeInsets.only(left: 10, right: 10, top: 15),
       padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.black),
+          border: Border.all(color: Colors.grey,width: 0.5),
           borderRadius: BorderRadius.all(Radius.circular(5))),
       width: double.infinity,
       child: Row(
