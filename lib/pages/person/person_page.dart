@@ -1,6 +1,8 @@
+import 'package:client_app/pages/person/person_vm.dart';
 import 'package:client_app/route/routes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:oktoast/oktoast.dart';
+import 'package:provider/provider.dart';
 
 class PersonPage extends StatefulWidget {
   const PersonPage({super.key});
@@ -10,25 +12,48 @@ class PersonPage extends StatefulWidget {
 }
 
 class _PersonPageState extends State<PersonPage> {
+  PersonViewModel personViewModel = PersonViewModel();
+
+  @override
+  void initState() {
+    personViewModel.initData();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+        body: ChangeNotifierProvider(
+      create: (context) {
+        return personViewModel;
+      },
+      child: SafeArea(
           child: Container(
         width: double.infinity,
+        height: double.infinity,
         alignment: Alignment.center,
         child: Column(
           children: [
             _header(() {
-              Navigator.pushNamed(context, RoutePath.loginPage);
+              if (personViewModel.shouldLogin) {
+                Navigator.pushNamed(context, RoutePath.loginPage);
+              }
             }),
             _settingItem("我的收藏", () {}),
             _settingItem("检查更新", () {}),
             _settingItem("关于我们", () {}),
+            _loginOut(() {
+              if (personViewModel.shouldLogin) {
+                showToast("没有登录");
+                return;
+              }
+              personViewModel.loginOut();
+              showToast("退出成功");
+            }),
           ],
         ),
       )),
-    );
+    ));
   }
 
   Widget _settingItem(String title, GestureTapCallback? onTap) {
@@ -78,14 +103,33 @@ class _PersonPageState extends State<PersonPage> {
         SizedBox(
           height: 6,
         ),
-        GestureDetector(
-          onTap: onTap,
-          child: Text(
-            '未登录',
-            style: TextStyle(fontSize: 14, color: Colors.white),
-          ),
-        )
+        Consumer<PersonViewModel>(builder: (context, vm, child) {
+          return GestureDetector(
+            onTap: onTap,
+            child: Text(
+              vm.username ?? "",
+              style: TextStyle(fontSize: 14, color: Colors.white),
+            ),
+          );
+        })
       ]),
+    );
+  }
+
+  Widget _loginOut(GestureTapCallback? onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+            color: Colors.white38,
+            border: Border.all(width: 0.5, color: Colors.black),
+            borderRadius: BorderRadius.circular(10)),
+        alignment: Alignment.center,
+        height: 40,
+        width: 200,
+        margin: EdgeInsets.only(top: 30),
+        child: Text('退出登录', style: TextStyle(fontSize: 19)),
+      ),
     );
   }
 }

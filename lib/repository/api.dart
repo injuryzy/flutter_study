@@ -91,4 +91,36 @@ class Api {
         KnowledgeListData.fromJson(response.data);
     return knowledgeListData.list;
   }
+
+//    获取收藏数据
+
+  Future<bool?> collect(String? id) async {
+    Response response =
+        await DioInstance.instance().post(path: "/lg/collect/${id}/json");
+    if (response != null && response.data is bool) {
+      return response.data;
+    }
+    return false;
+  }
+
+//    取消收藏
+  Future<bool?> uncollect(String? id) async {
+    Response response = await DioInstance.instance()
+        .post(path: "/lg/uncollect_originId/${id}/json");
+    if (response != null && response.data is bool) {
+      return response.data;
+    }
+    return false;
+  }
+
+  //  退出登录
+  Future<bool?> loginOut() async {
+    Response response =
+        await DioInstance.instance().get(path: "/user/logout/json");
+    print(response);
+    if (response != null && response.data is bool) {
+      return response.data;
+    }
+    return false;
+  }
 }

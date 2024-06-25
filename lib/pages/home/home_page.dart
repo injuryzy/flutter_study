@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
-          return _listItemView(vm.homeDataList?[index]);
+          return _listItemView(vm.homeDataList?[index], index);
         },
         itemCount: vm.homeDataList?.length ?? 0,
       );
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  Widget _listItemView(HomeListItemData? item) {
+  Widget _listItemView(HomeListItemData? item, int index) {
     String name = "";
     if (item?.author?.isEmpty == true) {
       name = item?.shareUser ?? "";
@@ -184,10 +184,21 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Expanded(child: SizedBox()),
-                Image.asset(
-                  "assets/images/collection.png",
-                  width: 30,
-                  height: 30,
+                GestureDetector(
+                  onTap: () {
+                    if (item?.collect == true) {
+                      viewModel.uncollect('${item?.id}', index);
+                    } else {
+                      viewModel.collect('${item?.id}', index);
+                    }
+                  },
+                  child: Image.asset(
+                    (item?.collect == false)
+                        ? "assets/images/collection.png"
+                        : "assets/images/collection-fill.png",
+                    width: 30,
+                    height: 30,
+                  ),
                 )
               ],
             )

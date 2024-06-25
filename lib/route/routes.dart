@@ -1,5 +1,6 @@
 import 'package:client_app/pages/auth/login_page.dart';
 import 'package:client_app/pages/auth/register_page.dart';
+import 'package:client_app/pages/person/person_page.dart';
 import 'package:client_app/pages/tab_page.dart';
 import 'package:client_app/pages/web_view_page.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,8 @@ class Routes {
         return pageRoute(LoginPage(), settings: settings);
       case RoutePath.registerPage:
         return pageRoute(RegisterPage(), settings: settings);
+      case RoutePath.personPage:
+        return pageRoute(PersonPage(), settings: settings);
     }
     return pageRoute(
       Scaffold(
@@ -44,4 +47,5 @@ class RoutePath {
   static const String webViewPage = "/web_view_page";
   static const String loginPage = "/login";
   static const String registerPage = "/register";
+  static const String personPage = "/person";
 }

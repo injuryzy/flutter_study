@@ -7,7 +7,7 @@ class CookieInterceptor extends Interceptor {
 
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    options.headers["Set-Cookie"] = cookList;
+    options.headers[HttpHeaders.cookieHeader] = cookList;
     handler.next(options);
     // super.onRequest(options, handler);
   }
@@ -15,7 +15,7 @@ class CookieInterceptor extends Interceptor {
   @override
   void onResponse(Response response, ResponseInterceptorHandler handler) {
     if (response.requestOptions.path.contains("user/login")) {
-      dynamic list = response.headers["Set-Cookie"];
+      dynamic list = response.headers[HttpHeaders.setCookieHeader];
 
       if (list is List) {
         for (String? cookie in list) {

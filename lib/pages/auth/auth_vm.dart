@@ -1,4 +1,5 @@
 import 'package:client_app/repository/api.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:oktoast/oktoast.dart';
 
@@ -32,6 +33,9 @@ class AuthViewMode with ChangeNotifier {
     } else {
       showToast("用户名和密码不能为空");
     }
+    if (resp) {
+      UserName = loginInfo.name ?? "";
+    }
     return resp;
   }
 }
@@ -45,4 +49,16 @@ class RegisterInfo {
 class LoginInfo {
   String? name;
   String? password;
+}
+
+String UserName = "未登录";
+
+//  获取登录名称
+Future<String?> getUserName() async {
+  return UserName;
+}
+
+Future<bool> isLoginOut() async {
+  bool? isLoginOut = await Api.intertance.loginOut();
+  return isLoginOut ?? false;
 }

@@ -58,4 +58,22 @@ class HomeViewModel with ChangeNotifier {
         await Api.intertance.getHomeTopList() ?? [];
     return topList;
   }
+
+//   收藏的接口
+  Future collect(String? id, int index) async {
+    bool? isCollect = await Api.intertance.collect(id);
+    if (isCollect == true) {
+      homeDataList?[index].collect = true;
+      notifyListeners();
+    }
+  }
+
+  //  取消收藏
+  Future uncollect(String? id, int index) async {
+    bool? isCollect = await Api.intertance.uncollect(id);
+    if (isCollect == true) {
+      homeDataList?[index].collect = false;
+      notifyListeners();
+    }
+  }
 }

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:client_app/http/dio_instance.dart';
 import 'package:client_app/pages/home/home_page.dart';
 import 'package:client_app/route/routes.dart';
@@ -6,6 +8,7 @@ import 'package:oktoast/oktoast.dart';
 
 void main() {
   DioInstance.instance().initDio(baseUrl: "https://www.wanandroid.com");
+  HttpOverrides.global = MyHttpOverrides();
   runApp(const MyApp());
 }
 
@@ -41,5 +44,14 @@ class MyApp extends StatelessWidget {
       initialRoute: RoutePath.tab,
       // home:  HomePage(),
     ));
+  }
+}
+
+
+class MyHttpOverrides extends HttpOverrides{
+  @override
+  HttpClient createHttpClient(SecurityContext? context){
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
   }
 }

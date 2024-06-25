@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:client_app/common_ui/common_style.dart';
 import 'package:oktoast/oktoast.dart';
+import '../person/person_vm.dart';
 import 'auth_vm.dart';
 
 class LoginPage extends StatefulWidget {
@@ -16,6 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController? inputController;
   TextEditingController? passwordController;
   AuthViewMode authViewMode = AuthViewMode();
+  PersonViewModel personViewModel = PersonViewModel();
 
   @override
   void initState() {
@@ -49,6 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                   authViewMode.login().then((e) {
                     if (e) {
                       showToast("登录成功");
+                      Navigator.pushNamed(context, RoutePath.personPage);
                     }
                   });
                 }),

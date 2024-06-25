@@ -388,7 +388,12 @@ class HomeListItemData {
 
   String? get chapterName => _chapterName;
 
+
   bool? get collect => _collect;
+
+  set collect(bool? a) {
+    _collect = a;
+  }
 
   num? get courseId => _courseId;
 
