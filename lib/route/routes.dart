@@ -1,5 +1,6 @@
 import 'package:client_app/pages/auth/login_page.dart';
 import 'package:client_app/pages/auth/register_page.dart';
+import 'package:client_app/pages/knowledge/detail/knowledge_detail_tab_page.dart';
 import 'package:client_app/pages/person/person_page.dart';
 import 'package:client_app/pages/tab_page.dart';
 import 'package:client_app/pages/web_view_page.dart';
@@ -18,6 +19,8 @@ class Routes {
         return pageRoute(RegisterPage(), settings: settings);
       case RoutePath.personPage:
         return pageRoute(PersonPage(), settings: settings);
+      case RoutePath.detailKnowledgePage:
+        return pageRoute(KnowledgeDetailTabPage(), settings: settings);
     }
     return pageRoute(
       Scaffold(
@@ -48,4 +51,5 @@ class RoutePath {
   static const String loginPage = "/login";
   static const String registerPage = "/register";
   static const String personPage = "/person";
+  static const String detailKnowledgePage = "/knowledge_detail_page";
 }

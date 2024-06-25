@@ -8,6 +8,7 @@ import 'package:client_app/http/dio_instance.dart';
 import 'package:oktoast/oktoast.dart';
 
 import 'datas/knowledge_list_data.dart';
+import 'datas/konwledge_detail_list_data.dart';
 
 class Api {
   static Api intertance = Api._();
@@ -122,5 +123,16 @@ class Api {
       return response.data;
     }
     return false;
+  }
+
+// 体系文章列表
+  Future<List<KnowledgeTabItemData>?> getKnowledgeList(
+      String? cid, String page) async {
+    Response response = await DioInstance.instance()
+        .get(path: "/article/list/${page}/json", param: {"cid": cid});
+
+    KonwledgeDetailListData data =
+        KonwledgeDetailListData.fromJson(response.data);
+    return data.datas;
   }
 }
