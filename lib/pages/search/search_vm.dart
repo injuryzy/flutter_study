@@ -12,9 +12,11 @@ class SearchVm with ChangeNotifier {
     } else {
       page = 0;
     }
-    Api.intertance.searchKeywords('${page}', keywords).then((e) {
-      searchList = e;
-    });
+    searchList = await Api.intertance.searchKeywords('${page}', keywords);
     notifyListeners();
+  }
+
+  void clear() {
+    searchList?.clear();
   }
 }

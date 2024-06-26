@@ -1,5 +1,7 @@
 import 'package:client_app/pages/search/search_vm.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_html/flutter_html.dart';
 import 'package:provider/provider.dart';
 
 import '../../repository/datas/search_keywords.dart';
@@ -21,7 +23,6 @@ class _SearchPageState extends State<SearchPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     vm.search(false, widget.keyWords);
   }
@@ -38,18 +39,34 @@ class _SearchPageState extends State<SearchPage> {
           children: [
             _searchBar((e) {
               vm.search(false, e);
+              Focus.of(context).unfocus();
             }),
             Consumer<SearchVm>(builder: (context, vm, child) {
-              return ListView.builder(
-                itemBuilder: (context, index) {
-                  return Text(vm.searchList?[index].title ?? "");
-                },
-                itemCount: vm.searchList?.length ?? 0,
+              return Expanded(
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return _listItem(vm.searchList?[index]);
+                  },
+                  itemCount: vm.searchList?.length ?? 0,
+                ),
               );
             })
           ],
         ),
       )),
+    );
+  }
+
+  Widget _listItem(SearchRespItem? item) {
+    return GestureDetector(
+      onTap: () {},
+      child: Container(
+        decoration: BoxDecoration(
+            border:
+                Border(bottom: BorderSide(width: 1, color: Colors.black12))),
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+        child: Html(data: item?.title),
+      ),
     );
   }
 
@@ -90,7 +107,10 @@ class _SearchPageState extends State<SearchPage> {
           ),
           GestureDetector(
               onTap: () {
-                Navigator.pop(context);
+                inputController.text = '';
+                vm.clear();
+                Focus.of(context).unfocus();
+                // Navigator.pop(context);
               },
               child: Text("取消")),
           SizedBox(
