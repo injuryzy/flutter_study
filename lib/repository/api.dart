@@ -3,6 +3,7 @@ import 'package:client_app/repository/datas/common_website.dart';
 import 'package:client_app/repository/datas/home_banner_data.dart';
 import 'package:client_app/repository/datas/home_list_data.dart';
 import 'package:client_app/repository/datas/hot_key_vm.dart';
+import 'package:client_app/repository/datas/search_keywords.dart';
 import 'package:dio/dio.dart';
 import 'package:client_app/http/dio_instance.dart';
 import 'package:oktoast/oktoast.dart';
@@ -134,5 +135,13 @@ class Api {
     KonwledgeDetailListData data =
         KonwledgeDetailListData.fromJson(response.data);
     return data.datas;
+  }
+
+  //  搜索关键词
+  Future<List<SearchRespItem>?> searchKeywords(
+      String? page, String? keywords) async {
+    Response response = await DioInstance.instance().post(
+        path: "/article/query/${page}/json", queryParameters: {"k": keywords});
+    return SearchKeywords.fromJson(response.data).datas;
   }
 }

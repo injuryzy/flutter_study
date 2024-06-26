@@ -2,6 +2,7 @@ import 'package:client_app/pages/auth/login_page.dart';
 import 'package:client_app/pages/auth/register_page.dart';
 import 'package:client_app/pages/knowledge/detail/knowledge_detail_tab_page.dart';
 import 'package:client_app/pages/person/person_page.dart';
+import 'package:client_app/pages/search/search_page.dart';
 import 'package:client_app/pages/tab_page.dart';
 import 'package:client_app/pages/web_view_page.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +22,8 @@ class Routes {
         return pageRoute(PersonPage(), settings: settings);
       case RoutePath.detailKnowledgePage:
         return pageRoute(KnowledgeDetailTabPage(), settings: settings);
+      case RoutePath.searchPage:
+        return pageRoute(SearchPage(), settings: settings);
     }
     return pageRoute(
       Scaffold(
@@ -52,4 +55,5 @@ class RoutePath {
   static const String registerPage = "/register";
   static const String personPage = "/person";
   static const String detailKnowledgePage = "/knowledge_detail_page";
+  static const String searchPage = "/search_page";
 }

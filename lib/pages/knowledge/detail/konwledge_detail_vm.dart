@@ -19,7 +19,7 @@ class KonwledgeDetailVm with ChangeNotifier {
 
   Future getDetail(bool loadmore, String? cid) async {
     if (loadmore) {
-      page = page++;
+      page = ++page;
     } else {
       page = 0;
       detailList?.clear();
@@ -27,10 +27,6 @@ class KonwledgeDetailVm with ChangeNotifier {
     var list = await Api.intertance.getKnowledgeList(cid, '${page}');
     if (list?.isNotEmpty == true) {
       detailList?.addAll(list ?? []);
-    } else {
-      if (loadmore && page > 0) {
-        page--;
-      }
     }
     notifyListeners();
   }

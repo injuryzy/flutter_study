@@ -1,4 +1,5 @@
 import 'package:client_app/pages/hot_key/hot_key_vm.dart';
+import 'package:client_app/pages/search/search_page.dart';
 import 'package:client_app/repository/datas/common_website.dart';
 import 'package:client_app/route/routes.dart';
 import 'package:flutter/material.dart';
@@ -6,7 +7,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
 import 'package:client_app/repository/datas/hot_key_vm.dart';
-
 
 class HotKeyPage extends StatefulWidget {
   const HotKeyPage({super.key});
@@ -36,34 +36,49 @@ class _HotKeyPageState extends State<HotKeyPage> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.all(6),
-                  padding:
-                      EdgeInsets.only(left: 20, right: 20, top: 6, bottom: 6),
-                  decoration: BoxDecoration(
-                      border: Border(
-                    top: BorderSide(width: 1, color: Colors.grey),
-                    bottom: BorderSide(width: 1, color: Colors.grey),
-                  )),
-                  child: Row(
-                    children: [
-                      Text(
-                        '搜索热词',
-                        style: TextStyle(fontSize: 14),
+                    margin: EdgeInsets.all(6),
+                    padding:
+                        EdgeInsets.only(left: 20, right: 20, top: 6, bottom: 6),
+                    decoration: BoxDecoration(
+                        border: Border(
+                      top: BorderSide(width: 1, color: Colors.grey),
+                      bottom: BorderSide(width: 1, color: Colors.grey),
+                    )),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return SearchPage();
+                        }));
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            '搜索热词',
+                            style: TextStyle(fontSize: 14),
+                          ),
+                          // Expanded(child: SizedBox()),
+                          SvgPicture.asset(
+                            "assets/images/search.svg",
+                            color: Colors.blueGrey,
+                            width: 20,
+                            height: 20,
+                          )
+                        ],
                       ),
-                      Expanded(child: SizedBox()),
-                      SvgPicture.asset(
-                        "assets/images/search.svg",
-                        color: Colors.blueGrey,
-                        width: 20,
-                        height: 20,
-                      )
-                    ],
-                  ),
-                ),
+                    )),
                 //    搜索热词
                 Consumer<HotKeyViewModel>(builder: (context, vm, child) {
-                  return _gridView(false,
-                      keyList: vm.keyList, itemTap: (value) {});
+                  return _gridView(false, keyList: vm.keyList,
+                      itemTap: (value) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return SearchPage(
+                        keyWords: value,
+                      );
+                    }));
+                  });
                 }),
                 Container(
                   alignment: Alignment.centerLeft,

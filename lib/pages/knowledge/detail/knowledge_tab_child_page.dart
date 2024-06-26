@@ -1,10 +1,10 @@
-import 'package:client_app/pages/knowledge/knowledge_vm.dart';
+import 'dart:ffi';
+
 import 'package:client_app/repository/datas/konwledge_detail_list_data.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-
 import 'konwledge_detail_vm.dart';
 
 class KnowledgeTabChildPage extends StatefulWidget {
@@ -66,28 +66,33 @@ class _KnowledgeTabChildPage extends State<KnowledgeTabChildPage> {
 
   Widget _ListViewItem(KnowledgeTabItemData? item) {
     return Container(
-      margin: EdgeInsets.all(10),
+        margin: EdgeInsets.all(10),
         padding: EdgeInsets.all(7),
-        decoration: BoxDecoration(border: Border.all(width: 0.5),borderRadius: BorderRadius.all(Radius.circular(5))),
+        decoration: BoxDecoration(
+            border: Border.all(width: 0.5),
+            borderRadius: BorderRadius.all(Radius.circular(5))),
         child: Column(
-      children: [
-        Row(
           children: [
-            Text(
-              item?.superChapterName ?? "",
+            Row(
+              children: [
+                Text(
+                  item?.superChapterName ?? "",
+                ),
+                Expanded(child: SizedBox()),
+                Text(DateTime.fromMillisecondsSinceEpoch(
+                        item?.publishTime as int)
+                    .toString()),
+              ],
             ),
-            Expanded(child: SizedBox()),
-            Text(item?.publishTime.toString()??"")
+            Container(
+              child: Text(item?.title ?? ""),
+            ),
+            Row(children: [
+              Text(item?.chapterName ?? ""),
+              Expanded(child: SizedBox()),
+              Text(item?.author ?? item?.shareUser ?? "")
+            ])
           ],
-        ),
-        Container(
-          child: Text(item?.title ?? ""),
-        ),
-        Row(children: [
-          Expanded(child: SizedBox()),
-          Text(item?.author ?? item?.shareUser ?? "")
-        ])
-      ],
-    ));
+        ));
   }
 }

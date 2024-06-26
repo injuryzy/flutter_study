@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 
 import '../../../repository/datas/knowledge_list_data.dart';
 
-
 class KnowledgeDetailTabPage extends StatefulWidget {
   const KnowledgeDetailTabPage({super.key, this.list});
 
@@ -23,7 +22,6 @@ class _KnowledgeDetailTabPageState extends State<KnowledgeDetailTabPage>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     tabController =
         TabController(length: widget.list?.length ?? 0, vsync: this);
@@ -55,7 +53,7 @@ class _KnowledgeDetailTabPageState extends State<KnowledgeDetailTabPage>
 
   List<Widget> children() {
     return widget.list?.map((e) {
-          return KnowledgeTabChildPage(cid:'${e.id}');
+          return KnowledgeTabChildPage(cid: '${e.id}');
         }).toList() ??
         [];
   }
