@@ -7,6 +7,8 @@ import 'package:client_app/repository/datas/home_list_data.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 
+import '../../common_ui/loading.dart';
+
 class HomeViewModel with ChangeNotifier {
   List<ListBannerItem?>? bannerList = [];
 
@@ -20,6 +22,7 @@ class HomeViewModel with ChangeNotifier {
   }
 
   Future initHomeList(bool lodeMore, {ValueChanged<bool>? callback}) async {
+
     if (lodeMore) {
       pageCount++;
     } else {
@@ -30,6 +33,7 @@ class HomeViewModel with ChangeNotifier {
     getTopList(lodeMore);
     getHomeList(lodeMore).then((allList) {
       homeDataList?.addAll(allList ?? []);
+      Loading.dismissAll();
       notifyListeners();
       callback?.call(lodeMore);
     });

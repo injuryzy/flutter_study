@@ -1,3 +1,5 @@
+import 'package:client_app/common_ui/web/webview_page.dart';
+import 'package:client_app/common_ui/web/webview_widget.dart';
 import 'package:client_app/pages/search/search_vm.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +61,16 @@ class _SearchPageState extends State<SearchPage> {
 
   Widget _listItem(SearchRespItem? item) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return WebviewPage(
+            title: item?.title,
+            loadResource: item?.link ?? "",
+            webViewType: WebViewType.HTMLTEXT,
+          );
+        }));
+      },
+
       child: Container(
         decoration: BoxDecoration(
             border:

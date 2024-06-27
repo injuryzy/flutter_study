@@ -1,3 +1,5 @@
+import 'package:client_app/common_ui/web/webview_page.dart';
+import 'package:client_app/common_ui/web/webview_widget.dart';
 import 'package:client_app/pages/hot_key/hot_key_vm.dart';
 import 'package:client_app/pages/search/search_page.dart';
 import 'package:client_app/repository/datas/common_website.dart';
@@ -98,10 +100,15 @@ class _HotKeyPageState extends State<HotKeyPage> {
                 Consumer<HotKeyViewModel>(builder: (context, vm, child) {
                   return _gridView(true, webSiteList: vm.webSiteList,
                       itemTap: (value) {
-                    Navigator.pushNamed(context, RoutePath.webViewPage,
-                        arguments: {
-                          "name": "页面11",
-                        });
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return WebviewPage(
+                          loadResource: value ?? "",
+                          webViewType: WebViewType.HTMLTEXT,
+                        );
+                      }),
+                    );
                   });
                 }),
               ],

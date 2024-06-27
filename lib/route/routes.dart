@@ -1,11 +1,13 @@
+import 'package:client_app/common_ui/web/webview_widget.dart';
 import 'package:client_app/pages/auth/login_page.dart';
 import 'package:client_app/pages/auth/register_page.dart';
 import 'package:client_app/pages/knowledge/detail/knowledge_detail_tab_page.dart';
 import 'package:client_app/pages/person/person_page.dart';
 import 'package:client_app/pages/search/search_page.dart';
 import 'package:client_app/pages/tab_page.dart';
-import 'package:client_app/pages/web_view_page.dart';
 import 'package:flutter/material.dart';
+
+import '../common_ui/web/webview_page.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -13,7 +15,10 @@ class Routes {
       case RoutePath.tab:
         return pageRoute(TabPage(), settings: settings);
       case RoutePath.webViewPage:
-        return pageRoute(WebViewPage(title: "首页"), settings: settings);
+        // return pageRoute(WebViewPage(title: "首页"), settings: settings);
+        return pageRoute(
+            WebviewPage(loadResource: "", webViewType: WebViewType.URL),
+            settings: settings);
       case RoutePath.loginPage:
         return pageRoute(LoginPage(), settings: settings);
       case RoutePath.registerPage:

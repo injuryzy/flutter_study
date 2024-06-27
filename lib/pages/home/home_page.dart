@@ -1,12 +1,17 @@
+import 'package:client_app/common_ui/loading.dart';
+import 'package:client_app/common_ui/web/webview_widget.dart';
 import 'package:client_app/pages/home/home_vm.dart';
 import 'package:client_app/repository/datas/home_list_data.dart';
 import 'package:client_app/route/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+
+import '../../common_ui/web/webview_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,8 +27,23 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    Loading.showLoading(Duration(seconds: 45));
     viewModel.getBanner();
     viewModel.initHomeList(false);
+  }
+
+  void _refresh(bool loadMore) {
+    if (loadMore) {
+      viewModel.initHomeList(loadMore, callback: (loadMore) {
+        refreshController.loadComplete();
+      });
+    } else {
+      viewModel.getBanner().then((value) {
+        viewModel.initHomeList(loadMore, callback: (loadMore) {
+          refreshController.refreshCompleted();
+        });
+      });
+    }
   }
 
   @override
@@ -38,20 +58,11 @@ class _HomePageState extends State<HomePage> {
             controller: refreshController,
             enablePullUp: true,
             enablePullDown: true,
-            // header: ClassicFooter(),
-            // footer: ClassicFooter(),
-
             onLoading: () {
-              viewModel.initHomeList(true, callback: (loadMore) {
-                refreshController.loadComplete();
-              });
+              _refresh(true);
             },
             onRefresh: () {
-              viewModel.getBanner().then((value) {
-                viewModel.initHomeList(false, callback: (loadMore) {
-                  refreshController.refreshCompleted();
-                });
-              });
+              _refresh(false);
             },
             child: SingleChildScrollView(
               child: Column(
@@ -112,9 +123,22 @@ class _HomePageState extends State<HomePage> {
     }
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, RoutePath.webViewPage, arguments: {
-          "name": "使用路由传值",
-        });
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return WebviewPage(
+                title: item?.title,
+                loadResource: item?.link ?? "",
+                webViewType: WebViewType.HTMLTEXT,
+              );
+            },
+          ),
+        );
+
+        // Navigator.pushNamed(context, RoutePath.webViewPage, arguments: {
+        //   "name": "使用路由传值",
+        // });
         /* Navigator.push(
           context,
           MaterialPageRoute(builder: (context) {
