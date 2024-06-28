@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:client_app/common_ui/web/webview_page.dart';
 import 'package:client_app/repository/datas/konwledge_detail_list_data.dart';
 import 'package:flutter/cupertino.dart';

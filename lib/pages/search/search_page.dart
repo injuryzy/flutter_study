@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:provider/provider.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../repository/datas/search_keywords.dart';
 
@@ -20,7 +21,7 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   late TextEditingController inputController =
       TextEditingController(text: widget.keyWords ?? "");
-
+  RefreshController controller = RefreshController();
   SearchVm vm = SearchVm();
 
   @override
@@ -41,17 +42,30 @@ class _SearchPageState extends State<SearchPage> {
           children: [
             _searchBar((e) {
               vm.search(false, e);
+              //  隐藏键盘
               Focus.of(context).unfocus();
             }),
             Consumer<SearchVm>(builder: (context, vm, child) {
               return Expanded(
+                  child: SmartRefresher(
+                enablePullDown: true,
+                enablePullUp: true,
+                onLoading: () {
+                  vm.search(true, widget.keyWords);
+                  controller.loadComplete();
+                },
+                onRefresh: () {
+                  vm.search(false, widget.keyWords);
+                  controller.refreshCompleted();
+                },
+                controller: controller,
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return _listItem(vm.searchList?[index]);
                   },
                   itemCount: vm.searchList?.length ?? 0,
                 ),
-              );
+              ));
             })
           ],
         ),
@@ -70,7 +84,6 @@ class _SearchPageState extends State<SearchPage> {
           );
         }));
       },
-
       child: Container(
         decoration: BoxDecoration(
             border:
